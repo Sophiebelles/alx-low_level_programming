@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	int num;
+	int numb;
 
-	for (num = 0; num < 10; num++);
-	        putchar ((num % 10) + '0');
+	for (numb = 0; numb < 10; numb++)
+		putchar((numb % 10) + '0');
 
 	putchar('\n');
 
