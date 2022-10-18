@@ -3,29 +3,16 @@
 #include <timr.h>
 
 /**
- * main - Entry
+ * main -print letters in lowercase
  * Return: 0
  */
 int main(void)
 {
-	int n;
-	int a;
+	char l;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	a = n % 10;
-
-	if (a > 5)
+	for (l = 'a'; l <= 'z'; l++)
 	{
-		printf("Last digit of %d is %d and is greater than S\n", n, a);
+		putchar(l);
 	}
-	else if (a == 0)
-	{
-		pritf("Last digit of %d is %d and is 0\n", n, a);
-	}
-	else
-	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, a);
-	}
+	putchar("\n");
 	return (0);
-}
