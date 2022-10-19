@@ -2,6 +2,7 @@
 
 /**
  * main -print _putchar and a new line also
+ * SOPHIE's handiwork
  * Return: 0
  */
 int main(void)
