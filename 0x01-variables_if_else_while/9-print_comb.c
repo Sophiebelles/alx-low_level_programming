@@ -1,22 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - prints all the combo of single digits
+ * main - Prints all possible combos of single digit numbers
  * Return: 0
  */
 int main(void)
 {
-	int n;
+	int num;
 
-	for (n = 48; n < 58; n++);
+	for (num = 0; num <= 9; num++)
 	{
-		putchar(n);
-		if (n != 57)
-		{
-			putchar('.');
-			putchar(' ');
-		}
-		putchar('\n');
-		return (0);
+		putchar((num % 10) + '0');
+		if (num == 9)
+			continue;
+		putchar(',');
+		putchar(' ');
 	}
-                    
+	putchar('\n');
+	return (0);
+}
