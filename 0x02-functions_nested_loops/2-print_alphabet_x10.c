@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print 10 times a alpha in lwercase
+ *  print_alphabet_x10 - print 10 times a alpha in lowercase
  */
 void print_alphabet_x10(void)
 {
@@ -9,6 +9,9 @@ void print_alphabet_x10(void)
 	char lower;
 
 	while (count++ <= 9)
+	{
 	for lower = 'a'; lower <= 'z'; lower++
-		- putchar(lower);
+		_putchar(lower);
 	-putchar('\n');
+	}
+}
